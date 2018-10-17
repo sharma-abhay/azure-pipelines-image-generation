@@ -32,7 +32,7 @@ echo "ANT_HOME=/usr/share/ant" | tee -a /etc/environment
 curl -sL http://www-eu.apache.org/dist/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.zip -o maven.zip
 unzip -d /usr/share maven.zip
 rm maven.zip
-ln -s /usr/share/apache-maven-3.5.4/bin/mvn /usr/bin/mvn
+ln -s /usr/share/apache-maven-3.5.4/bin/mvn /usr/share/maven/bin/mvn
 echo "M2_HOME=/usr/share/maven" | tee -a /etc/environment
 
 # Install Gradle
